@@ -13,10 +13,11 @@ Coroutines - For async coding, it prevents, API call or DB accesses may block th
 
 
 
-<img src="https://github.com/eylulnc/Car-Map-Code-Task/blob/main/1.png" width="200" />
-</br>
+<p float="left">
+  <img src="https://github.com/eylulnc/Car-Map-Code-Task/blob/main/1.png" width="200" />
+  <img src="https://github.com/eylulnc/Car-Map-Code-Task/blob/main/2.png" width="200" />
+  <img src="https://github.com/eylulnc/Car-Map-Code-Task/blob/main/3.png" width="200" />
+</p>
 
-<img src="https://github.com/eylulnc/Car-Map-Code-Task/blob/main/2.png" width="200" />
 
-<img src="https://github.com/eylulnc/Car-Map-Code-Task/blob/main/3.png" width="200" />
 
