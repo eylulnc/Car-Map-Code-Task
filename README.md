@@ -11,7 +11,7 @@ Glide - For Image Loading
 
 Coroutines - For async coding, it prevents, API call or DB accesses may block the main thread so, using coroutine the call can make from another thread.
 
-![Alt text]((https://github.com/eylulnc/Car-Map-Code-Task/blob/main/1.png) 
-![Alt text]((https://github.com/eylulnc/Car-Map-Code-Task/blob/main/2.png)
-![Alt text]((https://github.com/eylulnc/Car-Map-Code-Task/blob/main/3.png)
+![Alt text](https://github.com/eylulnc/Car-Map-Code-Task/blob/main/1.png) 
+![Alt text](https://github.com/eylulnc/Car-Map-Code-Task/blob/main/2.png)
+![Alt text](https://github.com/eylulnc/Car-Map-Code-Task/blob/main/3.png)
 
