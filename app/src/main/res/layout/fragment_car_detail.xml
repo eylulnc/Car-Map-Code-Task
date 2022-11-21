@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_detail_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_lavender"
+    tools:context=".fragment.CarDetailFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/car_detail_fragment_imageView_height"
+        android:background="@color/dutch_white"
+        android:contentDescription="@string/car_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/car_detail_fragment_cardView_margin"
+        android:background="@color/light_lavender"
+        android:backgroundTint="@color/light_lavender"
+        android:theme="@style/ShapeAppearance_custom_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:strokeColor="@color/dark_byzantium"
+        app:strokeWidth="@dimen/car_detail_fragment_strokeWidth">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/car_detail_fragment_layoutMargin"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <TextView
+                android:id="@+id/modelNameTextView"
+                style="@style/DetailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/car_detail_fragment_textMargin"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/lato_bold_italic"
+                android:gravity="center"
+                android:padding="@dimen/car_detail_fragment_textPadding"
+                android:text="@string/model_name"
+                android:textSize="@dimen/car_detail_fragment_textSize_title" />
+
+            <TextView
+                android:id="@+id/licencePlateTextView"
+                style="@style/DetailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/car_detail_fragment_textMargin"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:padding="@dimen/car_detail_fragment_textPadding"
+                android:text="@string/licence_plate"
+                android:textSize="@dimen/car_detail_fragment_textSize_subTitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/colorTextView"
+                        style="@style/DetailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/car_detail_fragment_textSize_height"
+                        android:layout_margin="@dimen/car_detail_fragment_textMargin"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="@string/color"
+                        android:textSize="@dimen/car_detail_fragment_textSize_regular" />
+
+                    <TextView
+                        android:id="@+id/fuelTypeTextView"
+                        style="@style/DetailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/car_detail_fragment_textSize_height"
+                        android:layout_margin="@dimen/car_detail_fragment_textMargin"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="@string/fuel_type"
+                        android:textSize="@dimen/car_detail_fragment_textSize_regular" />
+
+                    <TextView
+                        android:id="@+id/seriesTextView"
+                        style="@style/DetailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/car_detail_fragment_textSize_height"
+                        android:layout_margin="@dimen/car_detail_fragment_textMargin"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="@string/series"
+                        android:textSize="@dimen/car_detail_fragment_textSize_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cleanlinessTextView"
+                        style="@style/DetailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/car_detail_fragment_textSize_height"
+                        android:layout_margin="@dimen/car_detail_fragment_textMargin"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="@string/cleanliness"
+                        android:textSize="@dimen/car_detail_fragment_textSize_regular" />
+
+                    <TextView
+                        android:id="@+id/fuelLevelTextView"
+                        style="@style/DetailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/car_detail_fragment_textSize_height"
+                        android:layout_margin="@dimen/car_detail_fragment_textMargin"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="@string/fuel_level"
+                        android:textSize="@dimen/car_detail_fragment_textSize_regular" />
+
+                    <TextView
+                        android:id="@+id/transmissionTextView"
+                        style="@style/DetailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/car_detail_fragment_textSize_height"
+                        android:layout_margin="@dimen/car_detail_fragment_textMargin"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:text="@string/transmission"
+                        android:textSize="@dimen/car_detail_fragment_textSize_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.eylulcan.carmap.fragment.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_carDetail"
+            app:destination="@id/carDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/carDetail"
+        android:name="com.eylulcan.carmap.fragment.CarDetailFragment"
+        android:label="fragment_car_detail"
+        tools:layout="@layout/fragment_car_detail">
+        <argument
+            android:name="selectedCar"
+            app:argType="com.eylulcan.carmap.model.Car" />
+    </fragment>
+
+</navigation>

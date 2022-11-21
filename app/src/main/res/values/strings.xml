@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Car Map</string>
+    <string name="car_image">Car Image</string>
+    <string name="license_plate">License Plate</string>
+    <string name="model">Model</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="model_name">Model Name :  %1$s</string>
+    <string name="licence_plate">Licence Plate :  %1$s</string>
+    <string name="cleanliness">Cleanliness \n %1$s</string>
+    <string name="transmission">Transmission \n %1$s</string>
+    <string name="fuel_level">Fuel Level \n %1$s</string>
+    <string name="fuel_type">Fuel Type \n %1$s</string>
+    <string name="color">Color  \n %1$s</string>
+    <string name="series">Series  \n %1$s</string>
+    <string name="info_button">Info Button</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/row_cardView_layoutMargin"
+    app:cardCornerRadius="@dimen/row_cardView_cornerRadius"
+    android:backgroundTint="@color/light_lavender"
+    app:cardElevation="@dimen/row_cardView_cardElevation"
+    app:strokeWidth="@dimen/row_cardView_strokeWidth"
+    app:strokeColor="@color/dutch_white"
+    android:id="@+id/materialCardRow"
+   >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/carImageView"
+                android:layout_width="@dimen/row_imageView_width"
+                android:layout_height="@dimen/row_imageView_height"
+                android:background="@color/light_lavender"
+                android:contentDescription="@string/car_image"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rowTextConstraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/rowTextConstraintLayout_margin"
+                app:layout_constraintBottom_toBottomOf="@+id/carImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/carImageView"
+                app:layout_constraintTop_toTopOf="@+id/carImageView"
+                android:background="@color/light_lavender">
+
+                <TextView
+                    android:id="@+id/modelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/row_text_margin"
+                    android:background="@color/light_lavender"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/model"
+                    android:textColor="@color/dutch_white"
+                    android:textSize="@dimen/row_modelName_textSize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/infoButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.24000001" />
+
+                <TextView
+                    android:id="@+id/licensePlateTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/row_text_margin"
+                    android:layout_marginBottom="@dimen/row_text_margin"
+                    android:background="@color/light_lavender"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/license_plate"
+                    android:textColor="@color/dutch_white"
+                    android:textSize="@dimen/row_licensePlate_textSize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/infoButton"
+                    app:layout_constraintTop_toBottomOf="@+id/modelTextView" />
+
+                <ImageButton
+                    android:id="@+id/infoButton"
+                    android:layout_width="@dimen/row_imageButton_width"
+                    android:layout_height="@dimen/row_imageButton_height"
+                    android:layout_marginEnd="@dimen/row_imageButton_margin"
+                    android:background="@color/light_lavender"
+                    android:src="@drawable/ic_outline_info_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    android:contentDescription="@string/info_button"
+                    app:layout_constraintStart_toStartOf="@+id/licensePlateTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+

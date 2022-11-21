@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CarDetailFragment Dimens -->
+    <dimen name="car_detail_fragment_textSize_regular">22sp</dimen>
+    <dimen name="car_detail_fragment_textSize_subTitle">27sp</dimen>
+    <dimen name="car_detail_fragment_textSize_title">30sp</dimen>
+    <dimen name="car_detail_fragment_textSize_height">65dp</dimen>
+    <dimen name="car_detail_fragment_textMargin">8dp</dimen>
+    <dimen name="car_detail_fragment_textPadding">8dp</dimen>
+    <dimen name="car_detail_fragment_strokeWidth">5dp</dimen>
+    <dimen name="car_detail_fragment_cardView_margin">-25dp</dimen>
+    <dimen name="car_detail_fragment_imageView_height">300dp</dimen>
+    <dimen name="car_detail_fragment_layoutMargin">8dp</dimen>
+
+    <!-- Car List Recycler Row -->
+    <dimen name="row_cardView_layoutMargin">16dp</dimen>
+    <dimen name="row_cardView_cornerRadius">10dp</dimen>
+    <dimen name="row_cardView_cardElevation">2dp</dimen>
+    <dimen name="row_cardView_strokeWidth">3dp</dimen>
+
+    <dimen name="row_imageView_height">120dp</dimen>
+    <dimen name="row_imageView_width">120dp</dimen>
+
+    <dimen name="row_imageButton_height">40dp</dimen>
+    <dimen name="row_imageButton_width">40dp</dimen>
+    <dimen name="row_imageButton_margin">8dp</dimen>
+
+    <dimen name="rowTextConstraintLayout_margin">16dp</dimen>
+
+    <dimen name="row_modelName_textSize">22sp</dimen>
+    <dimen name="row_licensePlate_textSize">20sp</dimen>
+    <dimen name="row_text_margin">16dp</dimen>
+
+    <!-- Map Fragment -->
+    <dimen name="mapFragment_peek_height">250dp</dimen>
+
+    <!-- Bottom Sheet Fragment -->
+    <dimen name="bottomSheet_imageView_marginTop">8dp</dimen>
+    <dimen name="bottomSheet_imageView_marginBottom">-32dp</dimen>
+
+</resources>

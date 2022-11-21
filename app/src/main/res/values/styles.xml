@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomCardCorners" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">30dp</item>
+        <item name="cornerSizeTopRight">30dp</item>
+    </style>
+
+    <style name="DetailText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_byzantium</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+</resources>
